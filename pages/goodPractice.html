@@ -9,9 +9,32 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>NAV</nav>
+    <header class="header">
+        <nav class="navbar">
+           <div class="hamburger">
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+           </div>
+           <ul class="nav-menu">
+                 <li class="nav-item">
+                    <a href="index.html" class="nav-link">Accueuil</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="pages/greenProject.html" class="nav-link">Green Project</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="pages/goodPractice.html" class="nav-link">Bonnes pratiques</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="pages/contact.html" class="nav-link">Contact</a>
+                 </li>
+           </ul>
+           <img class="logo" src="../assets/logo.png" alt="Logo wild">
+        </nav>
+     </header>
 
-    <h1>Le saviez-vous ?</h1>
+    <h1 class ="tips-h1">Le saviez-vous ?</h1>
 
     <section class="tips">
       <a class ="tips-title">Astuce #1</a>
@@ -27,4 +50,6 @@
         </a>
     </section>
 </body>
+<script src = "../burgerMenu.js"></script>
+
 </html>
