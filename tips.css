@@ -1,0 +1,45 @@
+body{
+  /*background-color: grey;*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    background-image: url('https://efi.int/sites/default/files/2020-12/placeholder.jpeg');
+    background-size: cover;
+    height: 20vh;
+    
+  }
+  .tips{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  } 
+  
+  .tips-title{
+    background-color: aqua;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 1px 1px black;
+    
+  
+  }
+  
+  .tips-content{
+    background-color:aquamarine;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    height: 0vhZ;
+  }
+  @media screen and (max-width: 414px) {
+      nav {
+      background-color: green;
+      }
+    }
+  
+  
+  
