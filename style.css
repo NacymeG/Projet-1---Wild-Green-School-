@@ -5,18 +5,28 @@
   --secondary-bg-color: rgba(118, 137, 72, 1);
 }
 
+body {
+  min-height: 100vh;
+  /* for stick footer */
+  display: flex;
+  flex-direction: column;
+  /* for stick footer */
+}
+
 /* MENU BURGER */ 
 
 .header{
   border-bottom: 1px solid #E2E8F0;
+  
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  position: fixed;
   padding: 16px 24px;
   background-color: var(--main-bg-color);
+  width: 100%;
 }
 
 .hamburger {
@@ -128,12 +138,29 @@
   padding-top: 50px;
 }
 
+.footer {
+  height: 62px;
+  background-color: var(--main-bg-color);
+  margin-top: auto;
+}
+
+.btntop {
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnfooter {
+  height: 50px;
+  width: 50px;
+}
+
 /* PROPOS */
 
 .propos {
   font-size: 15px;
   text-align: center;
-  padding-top: 50px;
 }
 
 
