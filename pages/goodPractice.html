@@ -4,15 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wild green school</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <link href="../reset.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
 </head>
-<body>
-    <header>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="goodPractice.html">Bonnes pratiques</a></li>
-            <li><a href="contact.html">Contactez nous</a></li>
-        </ul>
-    </header>
+<body class="tips-body">
+    <header class="header">
+        <nav class="navbar">
+           <div class="hamburger">
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+           </div>
+           <ul class="nav-menu">
+                 <li class="nav-item">
+                    <a href="index.html" class="nav-link">Accueuil</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="pages/greenProject.html" class="nav-link">Green Project</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="pages/goodPractice.html" class="nav-link">Bonnes pratiques</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="pages/contact.html" class="nav-link">Contact</a>
+                 </li>
+           </ul>
+           <img class="logo" src="../assets/logo.png" alt="Logo wild">
+        </nav>
+     </header>
+
+    <h1 class ="tips-h1">Le saviez-vous ?</h1>
+
+    <section class="tips">
+      <div class="tips-header">
+         <div class ="tips-title">
+         <a>Astuce #1</a>
+         <img class="drop-down" src="../assets/drop-down.png" alt="Drop down button">
+         </div>
+        
+      </div>
+
+      <a class ="tips-content">Lorem ipsum dolor sit amet</a>
+    </section>
 </body>
+<script src = "../burgerMenu.js"></script>
+
+</html>
