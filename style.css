@@ -202,17 +202,6 @@ body {
 
  }
    
-
-  .tips:active > .tips-content {
-    width: 100px;
-    height: 100px;
-    transform: translate(40vw, 0px);  }
-
-    .tips:active > .tips-title {
-      display: none;
-    }
-
-
   .tips-title:hover > .drop-down {
     transform: rotate(90deg);  
     transition: 200ms ease all;   
