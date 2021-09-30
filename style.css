@@ -202,17 +202,6 @@ body {
 
  }
    
-
-  .tips:active > .tips-content {
-    width: 100px;
-    height: 100px;
-    transform: translate(40vw, 0px);  }
-
-    .tips:active > .tips-title {
-      display: none;
-    }
-
-
   .tips-title:hover > .drop-down {
     transform: rotate(90deg);  
     transition: 200ms ease all;   
@@ -224,6 +213,166 @@ body {
    }
 
   
+
+  .tips-content{
+    background-color:#2ecc71;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    opacity: 80%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
@@ -239,6 +388,62 @@ body {
 
 
 
+
+
+  /*=================== CONTACT =========================*/
+
+  .photo{
+    display:flex;
+    border: red solid 2px;
+    margin: 30px;
+    height: 32vh;
+  }
+
+  .explication{
+    border: red solid 2px;
+    font-size: 18px;
+    margin: 30px;
+  }
+
+  .contact{
+      margin: 30px;
+      border-top: var(--main-bg-color) 2px solid;
+      color: var(--main-bg-color);
+      text-align: left;
+      font-weight: bold;
+      font-size: 24px;
+      padding-top: 8px;
+  }
+
+  .formulaire{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: right;
+    margin: auto;
+    
+  }
+
+  label{
+    font-size: 18px;
+    text-align: left;
+  }
+
+  input, textarea{
+    margin: 7px;
+    width: 60vw;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: bold;
+    border: solid var(--main-bg-color) 2px;
+  }
+
+  textarea {
+    padding-bottom: 40px;
+  }
+
+     
+    
 
 /* GREEN PROJECT */
 
