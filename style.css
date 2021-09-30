@@ -1,8 +1,12 @@
 /* GENERAL */
 
 :root {
-  --main-bg-color: rgba(49, 92, 43, 1);
-  --secondary-bg-color: rgba(118, 137, 72, 1);
+  --main-bg-color: #7d9f79 ;
+  --secondary-bg-color: #7d9f79 ;
+}
+
+ * {
+   font-family: 'Economica', sans-serif;
 }
 
 body {
@@ -27,6 +31,7 @@ body {
   padding: 16px 24px;
   background-color: var(--main-bg-color);
   width: 100%;
+  z-index: 3;
 }
 
 .hamburger {
