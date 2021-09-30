@@ -27,6 +27,7 @@ body {
   padding: 16px 24px;
   background-color: var(--main-bg-color);
   width: 100%;
+  z-index: 3;
 }
 
 .hamburger {
@@ -173,23 +174,28 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  height: 20vh;
-  font-size: 40px;
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; 
+  height: 200px;
+  font-size: 40px; 
+}
+.tips-all{
+  display: flex;
+  justify-content: space-evenly;
 }
 .tips-container{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  align-content:center;
+  flex-direction: column;
+  text-align: center;
 }
+
 .tips-btn{
-  margin: 15px;
+  margin:20px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 60px;
   font-size: 45px;
   transition: 1s;
@@ -199,14 +205,55 @@ body {
   background: #fff;
 }
 
-.tips-btn:hover{
-  box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
- 
+@media screen and (max-width: 768px) {
 
+  .tips-all{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+
+  .tips-btn {
+    width: 300px;
+    height: 300px;
+    font-size: 90px;
+  }
+
+   .tips-p{
+     max-width:100%;
+     margin: 0 0 0 42px;
+   }
   
+
+}
+
+  .tips-btn:hover{
+   box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
+}
+
+.tips-p{
+  transition: 1s;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 250px;
+  font-size: 20px;
+  text-align: center;
 }
 
 
+details[open] summary ~ * {
+  animation: sweep 0.5s ease-in;
+}
+
+
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+
+}
 /*====================================================/*
 
 
