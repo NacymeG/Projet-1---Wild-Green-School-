@@ -200,9 +200,9 @@ body {
    background: red;
  }
    
-  .tips-title:hover > .tips-content {
-   display: none;
-  }
+ .tips-title:hover > .tips-content {
+  display: none;
+ }
 
   .tips-title:hover > .drop-down {
     transform: rotate(90deg);  
