@@ -138,9 +138,17 @@ body {
 /* ACCUEIL */
 
 .home {
-  font-size: 35px;
+  font-size: 22px;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 70px;
+
+}
+
+.hometittle {
+  font-size: 42px;
+  padding-top: 40px;
+  margin-top: 70px;
+  text-align: center;
 }
 
 .footer {
@@ -229,6 +237,8 @@ body {
      max-width:100%;
      margin: 0 0 0 42px;
    }
+
+  }
   
   .tips-btn:hover{
    box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
@@ -261,7 +271,7 @@ details[open] summary ~ * {
 
 
 
-  /*=================== CONTACT =========================*/
+ /*=================== CONTACT =========================*/
 
   .photoEq{
     display:flex;
