@@ -229,6 +229,8 @@ body {
      max-width:100%;
      margin: 0 0 0 42px;
    }
+
+  }
   
   .tips-btn:hover{
    box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
