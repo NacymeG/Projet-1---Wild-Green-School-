@@ -202,6 +202,7 @@ margin-right: 180px;
 /*==================GOOD PRACTICES===========================*/
 .tips-body{
   background-color: #ecf0f1;
+  
 }
 .tips-h1{
   display: flex;
@@ -209,59 +210,65 @@ margin-right: 180px;
   align-items: center;
   margin-top: 30px;
   height: 200px;
-  font-size: 40px; 
+  font-size: 40px;
+  font-family: montserrat; 
 }
 .tips-all{
   display: flex;
   justify-content: space-evenly;
-}
-.tips-container{
-  display: flex;
-  align-content:center;
-  flex-direction: column;
-  text-align: center;
+  flex-wrap: wrap;
+  margin: 0 20vw 0 20vw;
 }
 
+.tips-container{
+  width: 240px;
+  margin: 20px;
+}
 .tips-btn{
   margin:20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+  text-align: center;
+  /*position: relative;*/
   width: 200px;
   height: 200px;
   border-radius: 60px;
-  font-size: 45px;
+  font-size: 30px;
   transition: 1s;
   cursor: pointer;
   border :none;
   box-shadow: 0 0 5px rgba(0,0,0,0.25);
   background: #fff;
+  font-family: montserrat;
 }
 
+.tips-btn p
+{
+  font-size: 40px;
+  margin: 10px 0 0 0;
+}
+/*===AFFICHAGE MOBILE===*/
 @media screen and (max-width: 768px) {
 
-  .tips-all {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+  .tips-container{
+    width: 100vw;
   }
-
-
   .tips-btn {
-    width: 300px;
-    height: 300px;
-    font-size: 90px;
+    width: 90vw;
+    height: 150px;
+    font-size: 30px;
   }
 
    .tips-p{
-     max-width:100%;
-     margin: 0 0 0 42px;
+     margin: 10vw 3vw 0 3vw;
+     text-align: left;
    }
 
   }
-  
+  /*===FIN AFFICHAGE MOBILE===*/
+
   .tips-btn:hover{
    box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
 }
@@ -271,7 +278,6 @@ margin-right: 180px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 250px;
   font-size: 20px;
   text-align: center;
 }
