@@ -178,8 +178,10 @@ body {
   font-size: 40px; 
 }
 .tips-all{
+  margin: 0 15vw 0 15vw;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .tips-container{
   display: flex;
@@ -204,7 +206,7 @@ body {
   box-shadow: 0 0 5px rgba(0,0,0,0.25);
   background: #fff;
 }
-
+ /*==========Mobile ==============*/
 @media screen and (max-width: 768px) {
 
   .tips-all{
