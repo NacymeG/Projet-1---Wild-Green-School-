@@ -202,8 +202,10 @@ margin-right: 180px;
 /*==================GOOD PRACTICES===========================*/
 .tips-body{
   background-color: #ecf0f1;
-}
+  }
+
 .tips-h1{
+  box-shadow: 0 0 5px rgba(0,0,0,0.25);
   display: flex;
   justify-content: center;
   align-items: center;
