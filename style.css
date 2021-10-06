@@ -303,8 +303,8 @@ body{
 
    .tips-p{
     margin: 0 20vw 0 20vw;
+  }
   
-   }
 
   }
   
@@ -354,8 +354,8 @@ details[open] summary ~ * {
     /*border: red solid 2px;*/
     font-size: 18px;
     margin: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 180px;
+    margin-right: 180px;
   }
 
   .contact{
@@ -366,8 +366,8 @@ details[open] summary ~ * {
       font-weight: bold;
       font-size: 24px;
       padding-top: 8px;
-      margin-left: 30px;
-      margin-right: 30px;
+      margin-left: 180px;
+      margin-right: 180px;
   }
 
   .message{
@@ -388,11 +388,14 @@ details[open] summary ~ * {
     margin: 110px;
     margin-top: 15px;
     margin-bottom: 15px;
+    margin-right: 300px;
+    
   }
 
   label{
     font-size: 18px;
     text-align: left;
+    font-weight: bold;
   }
 
   input, textarea{
@@ -402,13 +405,18 @@ details[open] summary ~ * {
     padding: 5px;
     font-weight: bold;
     border: solid var(--main-bg-color) 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   }
 
   textarea {
     padding-bottom: 40px;
   }
   button{
+    font-size: 25px;
     border: none;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px,
+    #000000 1px -1px;
+    
   }
   .button {
     display: inline-block;
@@ -418,11 +426,12 @@ details[open] summary ~ * {
     color: #eeeeee;
     text-align: center;
     font-size: 15px;
-    padding: 10px;
-    width: 100px;
+    padding: 5px;
+    width: 150px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     }
   .button button {
     cursor: pointer;
@@ -454,8 +463,111 @@ details[open] summary ~ * {
     opacity: 1;
     right: 0;
     }
+    
+    #overlay {
+      display: none;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.829);
+      cursor: default;
+      z-index: 2;
+      top: 0;
+    }
+    .content h1 {
+      font-size: 120px;
+      color: var(--main-bg-color);
+      text-shadow: 5px 5px 5px #000000;
+      font-weight: 300;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 300px;
+    }
+    .okBtn button {
+    display: inline-block;
+    background-color: var(--main-bg-color);
+    border-radius: 10px;
+    border: 4px double #292929;
+    color: #eeeeee;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 50px;
+    text-shadow: #000000 2px 2px, #000000 -1px 1px, #000000 -1px -1px,
+    #000000 1px -1px;; 
+    box-shadow: 5px 5px 5px #000000;
+    }
 
-     
+      
+    .okBtn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+    }
+
+    @media screen and (max-width: 768px) {
+      .explication {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 25px;
+      }
+
+      .contact{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 34px;
+      }
+      .formulaire{
+        margin: 20px;
+        font-size: 25px;
+        display: flex;
+        align-items: flex-start;
+      }
+      label{
+        font-size: 25px;
+        font-weight: bold;
+      }
+      input, textarea {
+        width: 90vw;
+        font-size: 25px;
+      }
+      .message {
+        display: flex;
+        flex-direction: column;
+      }
+      button {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .button {
+        margin: auto;
+        margin-top: 35px;
+        font-size: 35px;
+      }
+      .titreContact {
+        text-align: center;
+      }
+      
+    }
+        
+        
+        
+      
+       
+        
+       
+        
+        
+      
     
 
 /* GREEN PROJECT */
