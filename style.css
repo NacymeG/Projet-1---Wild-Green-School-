@@ -255,14 +255,6 @@ body{
   text-align: center;
 }
 
-.tips-stars{
-position: absolute;
-width: 100vw;
-size: 25px;
-z-index: -1;
-display: none;
-}
-
 .tips-btn{
   margin:20px;
   display: flex;
