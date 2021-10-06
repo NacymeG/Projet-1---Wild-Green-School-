@@ -4,6 +4,7 @@
 :root {
   --main-bg-color: #7d9f79 ;
   --secondary-bg-color: #5e795b ;
+  --third-bg-color:#ecf0f1 ;
 }
 
 * {
@@ -28,7 +29,7 @@ body {
   background-color: var(--main-bg-color);
   width: 100%;
   z-index: 50;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.336);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.226);
 }
 
 .hamburger {
@@ -134,13 +135,29 @@ body {
 
 /* ACCUEIL */
 
+.propos {
+  font-size: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.propos h2 {
+  margin-top: 25px;
+}
+
+.imgFeuille {
+  height: 80px;
+  width: 80px;
+}
+
 .home {
 margin-left: 180px;
 margin-right: 180px;
 }
 
 .hometexte {
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   padding-top: 70px;
 }
@@ -157,19 +174,24 @@ margin-right: 180px;
   background-color: var(--main-bg-color);
   margin-top: auto;
   z-index: 50;
-  box-shadow: 0 10px 47px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 47px rgba(0, 0, 0, 0.342);
 }
 
-.btntop {
+#btntop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+}
+
+.btnfooter {
   padding-top: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.btnfooter {
-  height: 50px;
-  width: 50px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -192,32 +214,41 @@ margin-right: 180px;
     z-index: 6;
   }
 
+  .propos h2 {
+    margin-top: 12px;
+    text-align: center;
+  }
+  
+
 }
-
-/* PROPOS */
-
-.propos {
-  font-size: 15px;
-  text-align: center;
-}
-
 
 /*==================GOOD PRACTICES===========================*/
-.tips-body{
-  background-color: #ecf0f1;
+body{
+  background-color:var(--third-bg-color);
   }
 
 .tips-h1{
-  box-shadow: 0 0 5px rgba(0,0,0,0.25);
+  position: fixed;
+  background-color: #dfe6e9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  width: 100vw;
   height: 200px;
   font-size: 40px; 
+  color: #111; 
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 130px;
+  font-weight: bold; 
+  letter-spacing: -1px;
+  line-height: 1; 
+  text-align: center;
 }
 .tips-all{
-  margin: 0 15vw 0 15vw;
+ 
+  margin: 250px 20vw 0 20vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -462,7 +493,7 @@ text-align: center;
   z-index:1;
   width:100%;
   height:100%;
-  background-image:url('./assets/wildbefore.jpg');
+  background-image:url('./assets/wildbefore.png');
   background-size:cover;
   pointer-events: none;
   }
