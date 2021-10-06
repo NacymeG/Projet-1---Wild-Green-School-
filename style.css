@@ -291,7 +291,11 @@ margin-right: 180px;
 
 /*==================GOOD PRACTICES===========================*/
 body{
-  background-color:var(--third-bg-color);
+    background-color:var(--third-bg-color);
+  }
+
+.dark-mode {
+    background-color: black;
   }
 
 .tips-h1{
@@ -304,14 +308,8 @@ body{
   margin-top: 30px;
   width: 100vw;
   height: 200px;
-  font-size: 50px; 
-  color: #111; 
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 130px;
-  font-weight: bold; 
-  letter-spacing: -1px;
-  line-height: 1; 
-  text-align: center;
+  font-size: 90px;
+  z-index: 2;
 }
 .tips-all{
  
@@ -321,32 +319,55 @@ body{
   justify-content: space-around;
 }
 .tips-container{
-  display: flex;
-  align-content:center;
-  flex-direction: column;
   text-align: center;
 }
 
 .tips-btn{
   margin:20px;
   display: flex;
+  border: none;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
- 
   width: 200px;
   height: 200px;
   border-radius: 60px;
   font-size: 30px;
   transition: 1s;
   cursor: pointer;
-  border :none;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  color: black;
+}
+
+.tips-btn-dark{
+  margin:20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border-radius: 60px;
+  font-size: 30px;
+  transition: 1s;
+  cursor: pointer;
   box-shadow: 0 0 5px rgba(0,0,0,0.25);
   background: #fff;
+  color: black;
 }
+
+
+.tips-p{
+  margin:0 0 15px 20px;
+  width: 200px;
+  font-size: 20px;
+ }
 
 .tips-btn > p{
   font-size: 45px; 
+}
+
+a{
+  color : var(--main-bg-color)
 }
 
  /*==========Mobile ==============*/
@@ -359,7 +380,13 @@ body{
     align-content: center;
   }
 
-  .tips-btn {
+  .tips-btn{
+    width: 80vw;
+    height: 200px;
+    font-size: 40px;
+  }
+
+  .tips-btn-dark{
     width: 80vw;
     height: 200px;
     font-size: 50px;
@@ -368,25 +395,19 @@ body{
     font-size: 60px;
   }
 
-   .tips-p{
-    margin: 0 20vw 0 20vw;
   
-   }
-
-  }
-  
-  .tips-btn:hover{
-   box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
+.tips-btn:hover{
+  box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
 }
 
 .tips-p{
-  transition: 1s;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 250px;
-  font-size: 20px;
+  margin: 0 0 10px 0;
   text-align: center;
+  transition: 1s;
+  font-size: 20px;
+  width: auto;
+  font-size: 20px;
+   }
 }
 
 
