@@ -4,6 +4,7 @@
 :root {
   --main-bg-color: #7d9f79 ;
   --secondary-bg-color: #5e795b ;
+  --third-bg-color:#ecf0f1 ;
 }
 
 * {
@@ -28,7 +29,7 @@ body {
   background-color: var(--main-bg-color);
   width: 100%;
   z-index: 50;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.336);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.226);
 }
 
 .hamburger {
@@ -134,13 +135,29 @@ body {
 
 /* ACCUEIL */
 
+.propos {
+  font-size: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.propos h2 {
+  margin-top: 25px;
+}
+
+.imgFeuille {
+  height: 80px;
+  width: 80px;
+}
+
 .home {
 margin-left: 180px;
 margin-right: 180px;
 }
 
 .hometexte {
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   padding-top: 70px;
 }
@@ -157,19 +174,24 @@ margin-right: 180px;
   background-color: var(--main-bg-color);
   margin-top: auto;
   z-index: 50;
-  box-shadow: 0 10px 47px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 47px rgba(0, 0, 0, 0.342);
 }
 
-.btntop {
+#btntop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+}
+
+.btnfooter {
   padding-top: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.btnfooter {
-  height: 50px;
-  width: 50px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -192,63 +214,93 @@ margin-right: 180px;
     z-index: 6;
   }
 
+  .propos h2 {
+    margin-top: 12px;
+    text-align: center;
+  }
+  
+
 }
-
-/* PROPOS */
-
-.propos {
-  font-size: 15px;
-  text-align: center;
-}
-
 
 /*==================GOOD PRACTICES===========================*/
-.tips-body{
-  background-color: #ecf0f1;
+body{
+    background-color:var(--third-bg-color);
+  }
+
+.dark-mode {
+    background-color: black;
   }
 
 .tips-h1{
-  box-shadow: 0 0 5px rgba(0,0,0,0.25);
+  position: fixed;
+  background-color: #dfe6e9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  width: 100vw;
   height: 200px;
-  font-size: 40px; 
+  font-size: 90px;
+  z-index: 2;
 }
 .tips-all{
-  margin: 0 15vw 0 15vw;
+ 
+  margin: 250px 20vw 0 20vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .tips-container{
-  display: flex;
-  align-content:center;
-  flex-direction: column;
   text-align: center;
 }
 
 .tips-btn{
   margin:20px;
   display: flex;
+  border: none;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
- 
   width: 200px;
   height: 200px;
   border-radius: 60px;
   font-size: 30px;
   transition: 1s;
   cursor: pointer;
-  border :none;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  color: black;
+}
+
+.tips-btn-dark{
+  margin:20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border-radius: 60px;
+  font-size: 30px;
+  transition: 1s;
+  cursor: pointer;
   box-shadow: 0 0 5px rgba(0,0,0,0.25);
   background: #fff;
+  color: black;
 }
+
+
+.tips-p{
+  margin:0 0 15px 20px;
+  width: 200px;
+  font-size: 20px;
+ }
 
 .tips-btn > p{
   font-size: 45px; 
+}
+
+a{
+  color : var(--main-bg-color)
 }
 
  /*==========Mobile ==============*/
@@ -261,7 +313,13 @@ margin-right: 180px;
     align-content: center;
   }
 
-  .tips-btn {
+  .tips-btn{
+    width: 80vw;
+    height: 200px;
+    font-size: 40px;
+  }
+
+  .tips-btn-dark{
     width: 80vw;
     height: 200px;
     font-size: 40px;
@@ -270,25 +328,19 @@ margin-right: 180px;
     font-size: 60px;
   }
 
-   .tips-p{
-    margin: 0 20vw 0 20vw;
   
-   }
-
-  }
-  
-  .tips-btn:hover{
-   box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
+.tips-btn:hover{
+  box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
 }
 
 .tips-p{
-  transition: 1s;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 250px;
-  font-size: 20px;
+  margin: 0 0 10px 0;
   text-align: center;
+  transition: 1s;
+  font-size: 20px;
+  width: auto;
+  font-size: 20px;
+   }
 }
 
 
@@ -462,7 +514,7 @@ text-align: center;
   z-index:1;
   width:100%;
   height:100%;
-  background-image:url('./assets/wildbefore.jpg');
+  background-image:url('./assets/wildbefore.png');
   background-size:cover;
   pointer-events: none;
   }
