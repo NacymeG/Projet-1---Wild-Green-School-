@@ -19,6 +19,10 @@ body {
   /* for stick footer */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* MENU BURGER */ 
 
 .navbar {
@@ -29,7 +33,7 @@ body {
   background-color: var(--main-bg-color);
   width: 100%;
   z-index: 50;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.226);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.226);
 }
 
 .hamburger {
@@ -164,13 +168,13 @@ margin-right: 180px;
 
 .hometittle {
   font-size: 52px;
-  padding-top: 40px;
+  padding-top: 50px;
   margin-top: 100px;
   text-align: center;
 }
 
 .footer {
-  height: 62px;
+  height: 65px;
   background-color: var(--main-bg-color);
   margin-top: auto;
   z-index: 50;
@@ -178,20 +182,76 @@ margin-right: 180px;
 }
 
 #btntop {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 60px;
   width: 60px;
 }
 
 .btnfooter {
-  padding-top: 8px;
+  padding-top: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 0px;
   padding-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.test {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 48.5%;
+  height: 44px;
+  width: 60px;
+}
+
+.test:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  border-radius: 60px;
+  transition-duration: 0.4s;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.txt {
+  font-size: 28px;
+  padding-top: 5px;
+  padding-right: 15px;
+}
+
+.facebook {
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+  margin-top: 7px;
+  padding: 5px;
+}
+
+.instagram {
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+  margin-top: 7px;
+  padding: 5px;
+}
+
+.facebook:hover {
+  background-color: var(--secondary-bg-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.instagram:hover {
+  background-color: var(--secondary-bg-color);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -202,7 +262,7 @@ margin-right: 180px;
 
   .hometexte {
     font-size: 16px;
-    padding-top: 40px;
+    padding-top: 50px;
   }
 
   .hometittle {
@@ -218,13 +278,24 @@ margin-right: 180px;
     margin-top: 12px;
     text-align: center;
   }
-  
 
+  .test {
+    margin-left: 44.5%;
+  }
+
+  .txt {
+    display: none;
+  }
+  
 }
 
 /*==================GOOD PRACTICES===========================*/
 body{
-  background-color:var(--third-bg-color);
+    background-color:var(--third-bg-color);
+  }
+
+.dark-mode {
+    background-color: black;
   }
 
 .tips-h1{
@@ -237,14 +308,8 @@ body{
   margin-top: 30px;
   width: 100vw;
   height: 200px;
-  font-size: 40px; 
-  color: #111; 
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 130px;
-  font-weight: bold; 
-  letter-spacing: -1px;
-  line-height: 1; 
-  text-align: center;
+  font-size: 90px;
+  z-index: 2;
 }
 .tips-all{
  
@@ -254,32 +319,55 @@ body{
   justify-content: space-around;
 }
 .tips-container{
-  display: flex;
-  align-content:center;
-  flex-direction: column;
   text-align: center;
 }
 
 .tips-btn{
   margin:20px;
   display: flex;
+  border: none;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
- 
   width: 200px;
   height: 200px;
   border-radius: 60px;
   font-size: 30px;
   transition: 1s;
   cursor: pointer;
-  border :none;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  color: black;
+}
+
+.tips-btn-dark{
+  margin:20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border-radius: 60px;
+  font-size: 30px;
+  transition: 1s;
+  cursor: pointer;
   box-shadow: 0 0 5px rgba(0,0,0,0.25);
   background: #fff;
+  color: black;
 }
+
+
+.tips-p{
+  margin:0 0 15px 20px;
+  width: 200px;
+  font-size: 20px;
+ }
 
 .tips-btn > p{
   font-size: 45px; 
+}
+
+a{
+  color : var(--main-bg-color)
 }
 
  /*==========Mobile ==============*/
@@ -292,14 +380,21 @@ body{
     align-content: center;
   }
 
-  .tips-btn {
+  .tips-btn{
     width: 80vw;
     height: 200px;
     font-size: 40px;
   }
+
+  .tips-btn-dark{
+    width: 80vw;
+    height: 200px;
+    font-size: 50px;
+  }
   .tips-btn > p {
     font-size: 60px;
   }
+
 
    .tips-p{
     margin: 0 20vw 0 20vw;
@@ -310,16 +405,16 @@ body{
   
   .tips-btn:hover{
    box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
-}
-
+  }
+ 
 .tips-p{
-  transition: 1s;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 250px;
-  font-size: 20px;
+  margin: 0 0 10px 0;
   text-align: center;
+  transition: 1s;
+  font-size: 20px;
+  width: auto;
+  font-size: 20px;
+   }
 }
 
 
@@ -409,7 +504,7 @@ details[open] summary ~ * {
   }
 
   textarea {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
   button{
     font-size: 25px;
