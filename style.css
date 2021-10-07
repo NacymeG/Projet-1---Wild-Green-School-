@@ -731,14 +731,32 @@ details[open] summary ~ * {
 
 /* Slider */
 
-.title-gp{
+.project h1{
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  color: #7d9f79;
+  font-size: 70px;
+}
+
+.project h1 a {
   color: rgb(204,172,116);
+}
+
+.title-gp{
+  font-size: 40px;
+  color: black;
+  padding-top: 20px;
+}
+
+p{
+  padding-top: 20px;
 }
 
 .sims {
   width: 50%;
   height: 400px;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 .local {
@@ -747,25 +765,23 @@ text-align: center;
 }
 
 .éco {
-font-size: 30px;
-text-align: center;
+  font-size: 30px;
+  text-align: center;
 }
 
-  .container {
+.container {
   width:1024px;
   max-width: 50%;
   margin: 0 auto;
-  padding-top: 130px;
+  padding-top: 30px;
   }
 
-  .materials{
+  .materials ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .materials ul li {
-    text-align: justify;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px 80px 20px 80px;
+    
   }
   
   .slider__range {
@@ -862,10 +878,20 @@ text-align: center;
   
   @media screen and (max-width: 768px){
 
-   .container{
+
+    .project{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      color: rgb(204,172,116);
+      font-size: 30px;
+      padding-top: 5px;
+    }
+
+    .container{
      width:1024px;
      max-width: 90%;
-     padding-top: 55px;
+     padding-top: 10px;
     }
     
     .local {
@@ -886,16 +912,25 @@ text-align: center;
       padding-bottom: 10px;
     }
 
-    .materials{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .materials ul img {
+      margin-left: 10px;
+
     }
 
-    .materials ul li {
-      text-align: justify;
+    .materials ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding-top: 5px;
       
     }
+    .materials ul li {
+      display: flex;
+      align-items: center;
+      padding-top: 5px;
+      font-size: 22px;
+      }
     
     .slider__range {
       border: transparent;
@@ -906,7 +941,6 @@ text-align: center;
      width: 90% ;
      height: 150px;
      object-fit: cover;
-     padding-top: 20px;
     }
 
     .local {
