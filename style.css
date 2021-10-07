@@ -476,13 +476,14 @@ details[open] summary ~ * {
     margin: 20px;
     margin-left: 180px;
     margin-right: 180px;
+
   }
 
   .contactTxt{
       margin-left: 180px;
       margin-right: 180px;
       border-top: var(--main-bg-color) 2px solid;
-      color: var(--main-bg-color);
+      color: var(--fourth-bg-color);
       text-align: left;
       font-weight: bold;
       font-size: 32px;
@@ -559,7 +560,9 @@ details[open] summary ~ * {
     color: #eeeeee;
     text-align: center;
     font-size: 15px;
-    padding: 20px;
+    padding: 10px;
+    width: 150px;
+
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -583,16 +586,16 @@ details[open] summary ~ * {
     top: 0;
     right: -20px;
     transition: 0.5s;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--fourth-bg-color);
     }
 
   .button:hover {
-    background-color: var(--secondary-bg-color);
+    background-color: var(--fourth-bg-color);
     }
 
   .button:hover button {
     padding-right: 15px;
-    background-color: var( --secondary-bg-color);
+    background-color: var( --fourth-bg-color);
     }
 
   .button:hover button:after {
@@ -661,7 +664,8 @@ details[open] summary ~ * {
         font-size: 34px;
       }
       .formulaire{
-        margin: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
         font-size: 25px;
         display: flex;
         align-items: flex-start;
@@ -671,7 +675,7 @@ details[open] summary ~ * {
         font-weight: bold;
       }
       input, textarea {
-        width: 90vw;
+        width: 85vw;
         font-size: 25px;
       }
       .message {
