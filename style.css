@@ -368,11 +368,12 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 100vw;
   height: 180px;
   font-size: 90px;
   z-index: 2;
+  color: var(--fourth-bg-color);
 }
 .tips-all{
  
@@ -718,10 +719,6 @@ details[open] summary ~ * {
       
       .titreContact {
         text-align: center;
-      }
-
-      #overlay {
-        
       }
 
       .content h1 {
