@@ -16,7 +16,7 @@ function colorMode(toggle) {
 
     tipsH1.style.color = (toggle) 
     ? 'white'
-    :'black';
+    :'rgb(204,172,116)';
 };
 
 let toggled = true;
