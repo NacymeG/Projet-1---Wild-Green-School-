@@ -624,7 +624,8 @@ details[open] summary ~ * {
         font-size: 34px;
       }
       .formulaire{
-        margin: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
         font-size: 25px;
         display: flex;
         align-items: flex-start;
@@ -634,7 +635,7 @@ details[open] summary ~ * {
         font-weight: bold;
       }
       input, textarea {
-        width: 90vw;
+        width: 85vw;
         font-size: 25px;
       }
       .message {
