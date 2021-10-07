@@ -358,10 +358,6 @@ body{
     background-color:var(--third-bg-color);
   }
 
-.dark-mode {
-    background-color: black;
-  }
-
 .tips-h1{
   position: fixed;
   background-color: #dfe6e9;
@@ -371,13 +367,13 @@ body{
   align-items: center;
   margin-top: 30px;
   width: 100vw;
-  height: 200px;
+  height: 180px;
   font-size: 90px;
   z-index: 2;
 }
 .tips-all{
  
-  margin: 250px 20vw 0 20vw;
+  margin: 250px 25vw 0 25vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -385,8 +381,7 @@ body{
 .tips-container{
   text-align: center;
 }
-
-.tips-btn{
+.tips-btn , .tips-btn-dark{
   margin:20px;
   display: flex;
   border: none;
@@ -403,22 +398,9 @@ body{
   color: black;
 }
 
-.tips-btn-dark{
-  margin:20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 200px;
-  height: 200px;
-  border-radius: 60px;
-  font-size: 30px;
-  transition: 1s;
-  cursor: pointer;
-  box-shadow: 0 0 5px rgba(0,0,0,0.25);
-  background: #fff;
-  color: black;
-}
-
+.tips-btn:hover , .tips-btn-dark:hover{
+  box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.1);
+ }
 
 .tips-p{
   margin:0 0 15px 20px;
@@ -437,45 +419,30 @@ a{
  /*==========Mobile ==============*/
   @media screen and (max-width: 768px) {
 
-  .tips-all {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+  .tips-container{
+    width: 100vw;
   }
 
-  .tips-btn{
+  .tips-btn , .tips-btn-dark{
     width: 80vw;
     height: 200px;
     font-size: 40px;
   }
 
-  .tips-btn-dark{
-    width: 80vw;
-    height: 200px;
-    font-size: 50px;
-  }
   .tips-btn > p {
     font-size: 60px;
   }
 
-   .tips-p{
-    margin: 0 20vw 0 20vw;
-  }
-  
-  .tips-btn:hover{
-   box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
-  }
- 
   .tips-p{
-  margin: 0 0 10px 0;
-  text-align: center;
-  transition: 1s;
-  font-size: 20px;
-  width: auto;
-  font-size: 20px;
-   }
-}
+    margin: 0 20vw 10px 20vw;
+    text-align: center;
+    transition: 1s;
+    font-size: 20px;
+    width: auto;
+    font-size: 20px;
+     }
+  }
+  /*===FIN AFFICHAGE MOBILE===*/
 
 details[open] summary ~ * {
   animation: sweep 0.5s ease-in;
@@ -509,13 +476,14 @@ details[open] summary ~ * {
     margin: 20px;
     margin-left: 180px;
     margin-right: 180px;
+
   }
 
   .contactTxt{
       margin-left: 180px;
       margin-right: 180px;
       border-top: var(--main-bg-color) 2px solid;
-      color: var(--main-bg-color);
+      color: var(--fourth-bg-color);
       text-align: left;
       font-weight: bold;
       font-size: 32px;
@@ -592,7 +560,9 @@ details[open] summary ~ * {
     color: #eeeeee;
     text-align: center;
     font-size: 15px;
-    padding: 20px;
+    padding: 10px;
+    width: 150px;
+
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -616,16 +586,16 @@ details[open] summary ~ * {
     top: 0;
     right: -20px;
     transition: 0.5s;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--fourth-bg-color);
     }
 
   .button:hover {
-    background-color: var(--secondary-bg-color);
+    background-color: var(--fourth-bg-color);
     }
 
   .button:hover button {
     padding-right: 15px;
-    background-color: var( --secondary-bg-color);
+    background-color: var( --fourth-bg-color);
     }
 
   .button:hover button:after {
@@ -694,7 +664,8 @@ details[open] summary ~ * {
         font-size: 34px;
       }
       .formulaire{
-        margin: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
         font-size: 25px;
         display: flex;
         align-items: flex-start;
@@ -704,7 +675,7 @@ details[open] summary ~ * {
         font-weight: bold;
       }
       input, textarea {
-        width: 90vw;
+        width: 85vw;
         font-size: 25px;
       }
       .message {
