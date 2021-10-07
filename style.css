@@ -34,7 +34,7 @@ html {
   background-color: var(--main-bg-color);
   width: 100%;
   z-index: 50;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.226);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .hamburger {
@@ -140,6 +140,16 @@ html {
 
 /* ACCUEIL */
 
+.hometittle {
+  font-size: 72px;
+  padding-top: 50px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.hometittle h1 {
+  color: var(--fourth-bg-color);
+}
 
 .propos {
   font-size: 17px;
@@ -150,6 +160,7 @@ html {
 
 .propos h2 {
   margin-top: 25px;
+  font-size: 27px;
 }
 
 .imgFeuille {
@@ -163,16 +174,60 @@ margin-right: 180px;
 }
 
 .hometexte {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   padding-top: 70px;
 }
 
-.hometittle {
-  font-size: 52px;
-  padding-top: 50px;
-  margin-top: 100px;
-  text-align: center;
+.texte1 {
+  padding-bottom: 25px;
+  font-size: 35px;
+}
+
+.texte2 {
+  padding-bottom: 15px;
+  font-size: 35px;
+}
+
+.row {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding-top: 80px;
+}
+
+.row ul {
+  font-size: 25px;
+  padding-top: 25px;
+}
+
+.formation {
+font-size: 20px;
+}
+
+.formation h1 {
+  padding-bottom: 25px;
+}
+
+.formation p {
+  font-size: 28px;
+  padding-top: 20px;
+}
+
+.villes {
+  font-size: 20px;
+}
+
+.ville {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 35px;
+}
+
+.ville li {
+  padding-top: 15px;
+  font-size: 28px;
 }
 
 .footer {
@@ -258,8 +313,8 @@ margin-right: 180px;
 
 @media screen and (max-width: 768px) {
   .home {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 
   .hometexte {
@@ -268,8 +323,9 @@ margin-right: 180px;
   }
 
   .hometittle {
-    font-size: 28px;
+    font-size: 32px;
     padding-bottom: 22px;
+    padding-top: 0px;
   }
 
   .footer {
@@ -288,6 +344,12 @@ margin-right: 180px;
   .txt {
     display: none;
   }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }
   
 }
 
@@ -373,7 +435,7 @@ a{
 }
 
  /*==========Mobile ==============*/
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
 
   .tips-all {
     display: flex;
@@ -397,7 +459,6 @@ a{
     font-size: 60px;
   }
 
-
    .tips-p{
     margin: 0 20vw 0 20vw;
   }
@@ -407,7 +468,7 @@ a{
    box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
   }
  
-.tips-p{
+  .tips-p{
   margin: 0 0 10px 0;
   text-align: center;
   transition: 1s;
@@ -417,11 +478,9 @@ a{
    }
 }
 
-
 details[open] summary ~ * {
   animation: sweep 0.5s ease-in;
 }
-
 
 @keyframes sweep {
   0%    {opacity: 0;}
@@ -441,8 +500,8 @@ details[open] summary ~ * {
     /* border: red solid 2px; */
     margin: 15px;
     height: 32vh;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 180px;
+    margin-right: 180px;
   }
 
   .explication{
@@ -454,16 +513,19 @@ details[open] summary ~ * {
 
   }
 
-  .contact{
-      margin: 20px;
+  .contactTxt{
+      margin-left: 180px;
+      margin-right: 180px;
       border-top: var(--main-bg-color) 2px solid;
       color: var(--fourth-bg-color);
       text-align: left;
       font-weight: bold;
-      font-size: 24px;
+      font-size: 32px;
       padding-top: 8px;
-      margin-left: 180px;
-      margin-right: 180px;
+  }
+
+  .contact{
+      margin: 0;
   }
 
   .message{
@@ -501,19 +563,29 @@ details[open] summary ~ * {
     padding: 5px;
     font-weight: bold;
     border: solid var(--main-bg-color) 2px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  input[type=text]:focus{
+    outline: 2px solid rgb(204,172,116);     /* oranges! yey */
+  }
+
+  textarea[type=text]:focus{
+    outline: 2px solid rgb(204,172,116);     /* oranges! yey */
   }
 
   textarea {
     padding-bottom: 50px;
+    font-size: 26px;
   }
-  button{
+
+  button {
     font-size: 25px;
     border: none;
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px,
     #000000 1px -1px;
-    
   }
+  
   .button {
     display: inline-block;
     background-color: var(--main-bg-color);
@@ -528,8 +600,9 @@ details[open] summary ~ * {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    }
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+
   .button button {
     cursor: pointer;
     display: inline-block;
@@ -538,8 +611,8 @@ details[open] summary ~ * {
     background-color: var(--main-bg-color);
     color:rgba(255,255,255);
     font-weight: bold;
-    
     }
+
   .button button:after {
     content: '\00bb';
     position: absolute;
@@ -549,17 +622,20 @@ details[open] summary ~ * {
     transition: 0.5s;
     background-color: var(--fourth-bg-color);
     }
+
   .button:hover {
     background-color: var(--fourth-bg-color);
     }
+
   .button:hover button {
     padding-right: 15px;
     background-color: var( --fourth-bg-color);
     }
+
   .button:hover button:after {
     opacity: 1;
     right: 0;
-    }
+  }
     
     #overlay {
       display: none;
@@ -601,14 +677,12 @@ details[open] summary ~ * {
     #000000 1px -1px;; 
     box-shadow: 5px 5px 5px #000000;
     }
-
-      
+ 
     .okBtn {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-    
     }
 
     @media screen and (max-width: 768px) {
@@ -657,16 +731,6 @@ details[open] summary ~ * {
       
     }
         
-        
-        
-      
-       
-        
-       
-        
-        
-      
-    
 
 /* GREEN PROJECT */
 
@@ -682,10 +746,6 @@ details[open] summary ~ * {
   padding-top: 30px;
 }
 
-
-
-
-
 .local {
 font-size: 30px;
 text-align: center;
@@ -696,7 +756,7 @@ font-size: 30px;
 text-align: center;
 }
 
-.container {
+  .container {
   width:1024px;
   max-width: 50%;
   margin: 0 auto;
@@ -711,16 +771,14 @@ text-align: center;
 
   .materials ul li {
     text-align: justify;
-    
   }
   
   .slider__range {
     border: transparent;
     height: 5px;
-    
   }
 
-.slider {
+  .slider {
   position:relative;
   height:0px;
   padding-bottom:66.666666667%;
@@ -819,22 +877,18 @@ text-align: center;
       margin: 10 0 10 0 auto;
         text-align: center;
         font-size: 18px;
-
     }
 
     .éco{
       margin: 0 auto;
       text-align: center;
       font-size: 18px;
-
-
     }
 
     .title-gp{
       margin: 0 auto;
       font-size: 30px;
       padding-bottom: 10px;
-  
     }
 
     .materials{
@@ -850,8 +904,7 @@ text-align: center;
     
     .slider__range {
       border: transparent;
-      height: 5px;
-      
+      height: 5px; 
     }
 
     .sims {
@@ -875,4 +928,4 @@ text-align: center;
       margin-right: 20px;
       margin-left: 20px;
     }
-}
+  }
