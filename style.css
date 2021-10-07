@@ -130,6 +130,9 @@ html {
       top: 6%;
       width: 100%;
   }
+  .navbar {
+      box-shadow: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -562,7 +565,6 @@ details[open] summary ~ * {
     font-size: 15px;
     padding: 10px;
     width: 150px;
-
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -606,13 +608,19 @@ details[open] summary ~ * {
     #overlay {
       display: none;
       position: absolute;
-      height: 100%;
-      width: 100%;
+      left: 0%;
+      right: 0%;
+      bottom: 0%;
       background-color: rgba(0, 0, 0, 0.829);
       cursor: default;
       z-index: 2;
-      top: 0;
+      top: 60px;
     }
+
+    .titreContact {
+      padding: 50px;
+    }
+
     .content h1 {
       font-size: 120px;
       color: var(--main-bg-color);
@@ -624,6 +632,12 @@ details[open] summary ~ * {
       align-items: center;
       padding-top: 300px;
     }
+
+    .content {
+      margin: auto;
+      padding: auto;
+    }
+
     .okBtn button {
     display: inline-block;
     background-color: var(--main-bg-color);
@@ -639,6 +653,7 @@ details[open] summary ~ * {
     cursor: pointer;
     margin: 5px;
     margin-top: 50px;
+    margin-bottom: 250px;
     text-shadow: #000000 2px 2px, #000000 -1px 1px, #000000 -1px -1px,
     #000000 1px -1px;; 
     box-shadow: 5px 5px 5px #000000;
@@ -663,36 +678,54 @@ details[open] summary ~ * {
         margin-right: 20px;
         font-size: 34px;
       }
-      .formulaire{
-        margin-right: 20px;
+
+      .contactTxt {
         margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .formulaire{
+        margin-right: auto;
+        margin-left: auto;
         font-size: 25px;
         display: flex;
         align-items: flex-start;
       }
+
       label{
         font-size: 25px;
         font-weight: bold;
       }
+      
       input, textarea {
         width: 85vw;
         font-size: 25px;
       }
+
       .message {
         display: flex;
         flex-direction: column;
       }
+
       button {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
       }
       .button {
         margin: auto;
-        margin-top: 35px;
-        font-size: 35px;
+        margin-top: 10px;
       }
+      
       .titreContact {
         text-align: center;
+      }
+
+      #overlay {
+        
+      }
+
+      .content h1 {
+        font-size: 40px;
       }
       
     }
