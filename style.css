@@ -194,6 +194,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 padding-top: 80px;
+padding-bottom: 20px;
 }
 
 .row ul {
@@ -211,7 +212,7 @@ font-size: 20px;
 
 .formation p {
   font-size: 28px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .villes {
@@ -226,8 +227,33 @@ font-size: 20px;
 }
 
 .ville li {
-  padding-top: 15px;
+  padding-top: 10px;
   font-size: 28px;
+}
+
+.fleche {
+  height: 25px;
+  padding-top: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+
+.citylink {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.citylink:hover {
+color: var(--fourth-bg-color);
+cursor: pointer;
+text-shadow: 1px 1px 1px black;
+}
+
+.flag {
+  height: 30px;
 }
 
 .footer {
@@ -351,6 +377,17 @@ font-size: 20px;
     justify-content: space-around;
     }
   
+  .villes {
+    padding-top: 50px;
+  }
+
+  .citylink{
+    font-size: 20px;
+  }
+  .fleche{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
 }
 
 /*==================GOOD PRACTICES===========================*/
