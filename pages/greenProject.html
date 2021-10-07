@@ -5,33 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wild green school</title>
+    <link rel="icon" href="/assets/favico.ico"/>
     <link href="../reset.css" rel="stylesheet" type="text/css" />
     <link href="../style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-      <header class="header">
+      <header id="test">
         <nav class="navbar">
            <div class="hamburger">
                  <span class="bar"></span>
                  <span class="bar"></span>
                  <span class="bar"></span>
            </div>
-           <ul class="nav-menu">
-                 <li class="nav-item">
-                    <a href="../index.html" class="nav-link">Accueil</a>
-                 </li>
-                 <li class="nav-item">
-                    <a href="greenProject.html" class="nav-link">Green Project</a>
-                 </li>
-                 <li class="nav-item">
-                    <a href="goodPractice.html" class="nav-link">Bonnes pratiques</a>
-                 </li>
-                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                 </li>
-           </ul>
            <img class="logo" src="../assets/logo.png" alt="Logo wild">
         </nav>
+        <ul class="nav-menu">
+         <li class="nav-item">
+            <a href="../index.html" class="nav-link">Accueil</a>
+         </li>
+         <li class="nav-item">
+            <a href="greenProject.html" class="nav-link">Green Project</a>
+         </li>
+         <li class="nav-item">
+            <a href="goodPractice.html" class="nav-link">Bonnes pratiques</a>
+         </li>
+         <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+         </li>
+         </ul>
       </header>
 
       <div class="container">
@@ -44,24 +45,49 @@
       </div>
 
       <div class="local">
-        <h1>Aménager un intérieur éco-responsable</h1>
+        <h1 class="title-gp">Aménager un intérieur éco-responsable</h1>
         <p>un exemple de ce qu'on pourraient aménager concernant la structure, pour une Wild plus verte</p>
-        <img/>
+        <img class="sims" src="/assets/prototype.jpg" alt="prototype" />
       </div>
   
       <div class="éco">
-        <h2>Etre sensible à la transition énergétique</h2>
-        <p>Les travaux pour favoriser la transition écologique sont un gain au fil du temps.</br>
+         <h1 class="title-gp">Etre sensible à la transition énergétique</h1>
+         <p>Les travaux pour favoriser la transition écologique sont un gain au fil du temps.</br>
             En privilégiant les matériaux écologiques comme :</br>
-            .Le bois</br>
-            .Le liège</br>
-            .Le bambou</br>
-            .Le cuivre</br></br>
-            </p>
-            <h3>Passer sur l'électricité verte</h3>
-            <p>Un petit pas de plus pour avoir une entreprise éco-responsable.</br>
-            Commencer par se renseigner sur le contrat d'énergie verte proposé par chaque fournisseur.</p>
+         </p>
+         <div class="materials">
+            <ul>
+               <li>.Le bois</li>
+               <li>.Le liège</li>
+               <li>.Le bambou</li>
+               <li>.Le bambou</li>
+               <li>.Le cuivre</li>
+            </ul>
+         </div>
+         <h1 class="title-gp">Passer sur l'électricité verte</h1>
+         <p>Un petit pas de plus pour avoir une entreprise éco-responsable.</br>
+         Commencer par se renseigner sur le contrat d'énergie verte proposé par chaque fournisseur.</p>
       </div>
+      <footer class="footer">
+         <div class="btnfooter">
+            <a class="test" href="#test">
+               <img id="btntop" src="/assets/upbtn.png" alt="remonter en haut">
+            </a>
+            <div class="social">
+               <a class="txt"> Suivez-nous : </a>
+               <div class="link">
+                  <a href="https://www.facebook.com/WildCodeSchool" target="_blank">
+                     <img class="facebook" src="/assets/facebook.png" alt="lien vers instagram">
+                  </a>
+               </div>
+               <div class="link">
+                  <a href="https://www.instagram.com/WildCodeSchool" target="_blank">
+                     <img class="instagram" src="/assets/insta.png" alt="lien vers instagram">
+                  </a>
+               </div>      
+            </div>
+         </div>
+      </footer>
 
 </body>
 <script src='../slider.js'></script>

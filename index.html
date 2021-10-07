@@ -11,32 +11,33 @@
 </head>
 
 <body>
-   <header class="header">
+    <header id="test">
       <nav class="navbar">
          <div class="hamburger">
                <span class="bar"></span>
                <span class="bar"></span>
                <span class="bar"></span>
          </div>
-         <ul class="nav-menu">
-               <li class="nav-item">
-                  <a href="index.html" class="nav-link">Accueil</a>
-               </li>
-               <li class="nav-item">
-                  <a href="pages/greenProject.html" class="nav-link">Green Project</a>
-               </li>
-               <li class="nav-item">
-                  <a href="pages/goodPractice.html" class="nav-link">Bonnes pratiques</a>
-               </li>
-               <li class="nav-item">
-                  <a href="pages/contact.html" class="nav-link">Contact</a>
-               </li>
-         </ul>
-         <img class="logo" src="/assets/logo.png" alt="Logo wild">
+
+         <img class="logo" src="./assets/logo.png" alt="Logo wild">
       </nav>
+      <ul class="nav-menu">
+         <li class="nav-item">
+            <a href="index.html" class="nav-link">Accueil</a>
+         </li>
+         <li class="nav-item">
+            <a href="pages/greenProject.html" class="nav-link">Green Project</a>
+         </li>
+         <li class="nav-item">
+            <a href="pages/goodPractice.html" class="nav-link">Bonnes pratiques</a>
+         </li>
+         <li class="nav-item">
+            <a href="pages/contact.html" class="nav-link">Contact</a>
+         </li>
+      </ul>
    </header>
 
-   <conntainer class="home">
+   <container class="home">
       <section class="hometittle">
          <h1>
             Wild green school
@@ -44,27 +45,80 @@
       </section>
    
       <section class="propos">
-         <h2>Pour une Wild code school plus verte</h2>
+         <div class="propos">
+            <img class="imgFeuille" src="assets/test2.png">
+            <h2>Pour une Wild code school plus verte</h2>
+            <img class="imgFeuille" src="assets/test1.png">
+         </div>
       </section>
    
       <section class="hometexte">
-         <h1>
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta s
-            unt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
-            dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-             incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
-             exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem 
-             vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
-              dolorem eum fugiat quo voluptas nulla pariatur?"
+         <h1 class="texte1">
+            La Wild Code School est une école innovante et un réseau européen de campus qui forment aux métiers tech des spécialistes adaptables.
          </h1>
+         <h1 class="texte2">
+            Après s'être historiquement développée sur le métier de développeur web (PHP, Javascript, Java/Android)
+         </h1>
+         <div class="row">
+            <div class="formation">
+               <h1>
+                  L'école propose aujourd'hui des formations autour de six grands domaines:
+               </h1>
+                  <p>Développement web: Métier de Développeur web</p>
+                  <p>Data: Métier de Data analyst</p>
+                  <p>Cybersécurité: Métier Analyste cybersécurité</p> 
+                  <p>Product management: Métier de Product Manager</p>
+            </div>
+            <div class="villes">
+               <h1>
+                  La Wild Code School est présente dans 13 villes en France :
+               </h1>
+               <div class="ville">
+                  <ul>
+                     <li>Biarritz</li>
+                     <li>Bordeaux</li>
+                     <li>La Loupe</li>
+                  </ul>
+                  <ul>
+                     <li>Lille</li>
+                     <li>Lyon</li>
+                     <li>Marseille</li>
+                  </ul>
+                  <ul>
+                     <li>Nantes</li>
+                     <li>Orléans</li>
+                     <li>Paris</li>
+                  </ul>
+                  <ul>
+                     <li>Reims</li>
+                     <li>Strasbourg</li>
+                     <li>Toulouse</li>
+                     <li>Tours</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
       </section>
-   </conntainer>
+   </container>
 
    <footer class="footer">
-      <div class="btntop">
-         <img class="btnfooter" src="assets/upbtn.png">
+      <div class="btnfooter">
+         <a class="test" href="#test">
+            <img id="btntop" src="assets/upbtn.png" alt="remonter en haut">
+         </a>
+         <div class="social">
+            <a class="txt"> Suivez-nous : </a>
+            <div class="link">
+               <a href="https://www.facebook.com/WildCodeSchool" target="_blank">
+                  <img class="facebook" src="assets/facebook.png" alt="lien vers instagram">
+               </a>
+            </div>
+            <div class="link">
+               <a href="https://www.instagram.com/WildCodeSchool" target="_blank">
+                  <img class="instagram" src="assets/insta.png" alt="lien vers instagram">
+               </a>
+            </div>      
+         </div>
       </div>
    </footer>
 
