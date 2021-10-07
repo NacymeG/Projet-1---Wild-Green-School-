@@ -358,10 +358,6 @@ body{
     background-color:var(--third-bg-color);
   }
 
-.dark-mode {
-    background-color: black;
-  }
-
 .tips-h1{
   position: fixed;
   background-color: #dfe6e9;
@@ -385,7 +381,7 @@ body{
 .tips-container{
   text-align: center;
 }
-.tips-btn{
+.tips-btn , .tips-btn-dark{
   margin:20px;
   display: flex;
   border: none;
@@ -402,26 +398,9 @@ body{
   color: black;
 }
 
-.tips-btn:hover{
+.tips-btn:hover , .tips-btn-dark:hover{
   box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.1);
  }
-
-.tips-btn-dark{
-  margin:20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 200px;
-  height: 200px;
-  border-radius: 60px;
-  font-size: 30px;
-  transition: 1s;
-  cursor: pointer;
-  box-shadow: 0 0 5px rgba(0,0,0,0.25);
-  background: #fff;
-  color: black;
-}
-
 
 .tips-p{
   margin:0 0 15px 20px;
@@ -444,27 +423,18 @@ a{
     width: 100vw;
   }
 
-  .tips-btn{
+  .tips-btn , .tips-btn-dark{
     width: 80vw;
     height: 200px;
     font-size: 40px;
   }
 
-  .tips-btn-dark{
-    width: 80vw;
-    height: 200px;
-    font-size: 50px;
-  }
   .tips-btn > p {
     font-size: 60px;
   }
 
-   .tips-p{
-    margin: 0 20vw 0 20vw;
-  }
-
   .tips-p{
-    margin: 0 0 10px 0;
+    margin: 0 20vw 10px 20vw;
     text-align: center;
     transition: 1s;
     font-size: 20px;
@@ -473,10 +443,6 @@ a{
      }
   }
   /*===FIN AFFICHAGE MOBILE===*/
-
- 
- 
- 
 
 details[open] summary ~ * {
   animation: sweep 0.5s ease-in;
