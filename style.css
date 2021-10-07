@@ -371,18 +371,17 @@ body{
   align-items: center;
   margin-top: 30px;
   width: 100vw;
-  height: 200px;
+  height: 180px;
   font-size: 90px;
   z-index: 2;
 }
 .tips-all{
  
-  margin: 250px 20vw 0 20vw;
+  margin: 250px 25vw 0 25vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .tips-container{
   text-align: center;
 }
@@ -402,6 +401,10 @@ body{
   background: #fff;
   color: black;
 }
+
+.tips-btn:hover{
+  box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.1);
+ }
 
 .tips-btn-dark{
   margin:20px;
@@ -459,21 +462,21 @@ a{
    .tips-p{
     margin: 0 20vw 0 20vw;
   }
+
+  .tips-p{
+    margin: 0 0 10px 0;
+    text-align: center;
+    transition: 1s;
+    font-size: 20px;
+    width: auto;
+    font-size: 20px;
+     }
+  }
   /*===FIN AFFICHAGE MOBILE===*/
 
-  .tips-btn:hover{
-   box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
-  }
  
-  .tips-p{
-  margin: 0 0 10px 0;
-  text-align: center;
-  transition: 1s;
-  font-size: 20px;
-  width: auto;
-  font-size: 20px;
-   }
-}
+ 
+ 
 
 details[open] summary ~ * {
   animation: sweep 0.5s ease-in;

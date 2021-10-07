@@ -1,6 +1,4 @@
-tipsAll = document.querySelector('.tips-all')
 body = document.querySelector('body')
-tipsBtn = document.querySelector('.tips-btn')
 tipsH1 = document.querySelector('.tips-h1')
 
 function colorMode(toggle) {
