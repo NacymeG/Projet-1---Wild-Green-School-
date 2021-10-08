@@ -1,266 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wild green school</title>
-    <link rel="icon" href="/assets/favico.ico" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="reset.css" rel="stylesheet" type="text/css" />
-  </head>
+    <link rel="icon" href="./assets/favico.ico" />
+</head>
 
-  <body>
-    <header id="test">
-      <nav class="navbar">
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+    <body>
+
+        <div class="fullscreen-bg">
+            <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg-video">
+                <source src="./assets/video.mp4" type="video/mp4">
+            </video>
         </div>
 
-        <img class="logo" src="./assets/logo.png" alt="Logo wild" />
-      </nav>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a href="pages/greenProject.html" class="nav-link">Green Project</a>
-        </li>
-        <li class="nav-item">
-          <a href="pages/goodPractice.html" class="nav-link"
-            >Bonnes pratiques</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="pages/contact.html" class="nav-link">Contact</a>
-        </li>
-      </ul>
-    </header>
+        <style type="text/css">
 
-    <container class="home">
-      <section class="hometittle">
-        <h1>Wild green school</h1>
-      </section>
+        html {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        }
 
-      <section class="propos">
-        <div class="propos">
-          <img class="imgFeuille" src="assets/test2.png" />
-          <h2>Pour une Wild code school plus verte</h2>
-          <img class="imgFeuille" src="assets/test1.png" />
-        </div>
-      </section>
+        body {
+        min-height: 100%;
+        min-width: 100%;
+        overflow-x: hidden;
+        }
 
-      <section class="hometexte">
-        <h1 class="texte1">
-          La Wild Code School est une école innovante et un réseau européen de
-          campus qui forment aux métiers tech des spécialistes adaptables.
-        </h1>
-        <h1 class="texte2">
-          Après s'être historiquement développée sur le métier de développeur
-          web (PHP, Javascript, Java/Android)
-        </h1>
-        <div class="row">
-          <div class="formation">
-            <h1>
-              L'école propose aujourd'hui des formations autour de quatres
-              grands domaines:
-            </h1>
-            <p>
-              <a
-                class="citylink"
-                href="https://www.wildcodeschool.com/fr-FR/metiers/metier-de-developpeur-web"
-                target="_blank"
-                >Développement web
-                <img class="fleche" src="assets/fleche-droite.png" /> Métier de
-                Développeur web</a
-              >
-            </p>
-            <p>
-              <a
-                class="citylink"
-                href="https://www.wildcodeschool.com/fr-FR/metiers/metier-de-data-analyst"
-                target="_blank"
-                >Data
-                <img class="fleche" src="assets/fleche-droite.png" /> Métier de
-                Data analyst</a
-              >
-            </p>
-            <p>
-              <a
-                class="citylink"
-                href="https://www.wildcodeschool.com/fr-FR/metiers/metier-analyste-cybersecurite"
-                target="_blank"
-                >Cybersécurité
-                <img class="fleche" src="assets/fleche-droite.png" /> Métier
-                Analyste cybersécurité</a
-              >
-            </p>
-            <p>
-              <a
-                class="citylink"
-                href="https://www.wildcodeschool.com/fr-FR/metiers/metier-de-product-manager"
-                target="_blank"
-                >Product management
-                <img class="fleche" src="assets/fleche-droite.png" /> Métier de
-                Product Manager</a
-              >
-            </p>
-          </div>
-          <div class="villes">
-            <h1>
-              La Wild Code School est présente dans 13 villes en France
-              <img class="flag" src="assets/drapeau france.png" />
-            </h1>
-            <div class="ville">
-              <ul>
-                <li>
-                  <a
-                    class="citylink"
-                    href="https://www.wildcodeschool.com/fr-FR/campus/biarritz"
-                    target="_blank"
-                    >Biarritz</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="citylink"
-                    href="https://www.wildcodeschool.com/fr-FR/campus/bordeaux"
-                    target="_blank"
-                    >Bordeaux</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="citylink"
-                    href="https://www.wildcodeschool.com/fr-FR/campus/la-loupe"
-                    target="_blank"
-                    >La Loupe</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a
-                    class="citylink"
-                    href="https://www.wildcodeschool.com/fr-FR/campus/lille"
-                    target="_blank"
-                    >Lille</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="citylink"
-                    href="https://www.wildcodeschool.com/fr-FR/campus/lyon"
-                    target="_blank"
-                    >Lyon</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="citylink"
-                    href="https://www.wildcodeschool.com/fr-FR/campus/marseille"
-                    target="_blank"
-                    >Marseille</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a
-                    class="citylink"
-                    href="https://www.wildcodeschool.com/fr-FR/campus/nantes"
-                    target="_blank"
-                    >Nantes</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="citylink"
-                    href="https://www.wildcodeschool.com/fr-FR/campus/orleans"
-                    target="_blank"
-                    >Orléans</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="citylink"
-                    href="https://www.wildcodeschool.com/fr-FR/campus/paris"
-                    target="_blank"
-                    >Paris</a
-                  >
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a
-                    class="citylink"
-                    href="https://www.wildcodeschool.com/fr-FR/campus/reims"
-                    target="_blank"
-                    >Reims</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="citylink"
-                    href="https://www.wildcodeschool.com/fr-FR/campus/strasbourg"
-                    target="_blank"
-                    >Strasbourg</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="citylink"
-                    href="https://www.wildcodeschool.com/fr-FR/campus/toulouse"
-                    target="_blank"
-                    >Toulouse</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="citylink"
-                    href="https://www.wildcodeschool.com/fr-FR/campus/tours"
-                    target="_blank"
-                    >Tours</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-    </container>
+        .fullscreen-bg-video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 90px;
+        left: 50px;
+        }
 
-    <footer class="footer">
-      <div class="btnfooter">
-        <a class="test" href="#test">
-          <img id="btntop" src="assets/upbtn.png" alt="remonter en haut" />
-        </a>
-        <div class="social">
-          <a class="txt"> Suivez-nous : </a>
-          <div class="link">
-            <a href="https://www.facebook.com/WildCodeSchool" target="_blank">
-              <img
-                class="facebook"
-                src="assets/facebook.png"
-                alt="lien vers instagram"
-              />
-            </a>
-          </div>
-          <div class="link">
-            <a href="https://www.instagram.com/WildCodeSchool" target="_blank">
-              <img
-                class="instagram"
-                src="assets/insta.png"
-                alt="lien vers instagram"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
+        .fullscreen-bg {
+        padding-top: 56.25%;
+        height: 0px;
+        position: relative;
+        }
 
-    <script type="text/javascript" src="burgerMenu.js"></script>
-  </body>
+        @media screen and (max-width: 768px) {
+
+            .fullscreen-bg {
+                right: 30px;
+                bottom: 0px;
+            }
+
+            .fullscreen-bg-video {
+                bottom: 0px;
+                top: 200px;
+                right: 20px;
+                width: auto;
+            }
+        }
+            
+        </style>
+        
+        <script>
+
+        let timer = setTimeout(function() {
+            window.location='./index1.html'
+        }, 3200);
+
+        </script>
+        
+    </body>
 </html>
