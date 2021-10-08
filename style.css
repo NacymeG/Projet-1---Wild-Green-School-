@@ -553,10 +553,6 @@ details[open] summary ~ * {
     align-items: flex-start;
   }
 
-  .message label{
-    margin-top: 20px;
-  }
-
   .formulaire{
     /*border: red solid 2px;*/
     display: flex;
