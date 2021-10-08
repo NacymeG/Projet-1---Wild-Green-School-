@@ -360,7 +360,7 @@ text-shadow: 1px 1px 1px black;
   .hometittle {
     font-size: 32px;
     padding-bottom: 22px;
-    padding-top: 0px;
+    padding-top: 30px;
   }
 
   .footer {
@@ -945,8 +945,11 @@ text-align: center;
       justify-content: center;
       flex-direction: row;
       color: rgb(204,172,116);
-      font-size: 30px;
       padding-top: 5px;
+    }
+
+    .project h1 {
+      font-size: 60px;
     }
 
     .container{
