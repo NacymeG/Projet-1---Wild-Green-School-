@@ -10,7 +10,7 @@
 
 * {
    font-family: 'Economica', sans-serif;
-   scrollbar-color: rgb(204,172,116) #7d9f79;
+   scrollbar-color: #7d9f79 #ffffff;
 }
 
 body {
@@ -24,10 +24,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
-
-body::-webkit-scrollbar {
-  width: 120px; /* width of the entire scrollbar */
 }
 
 /* MENU BURGER */ 
