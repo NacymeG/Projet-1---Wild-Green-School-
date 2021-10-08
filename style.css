@@ -373,7 +373,7 @@ body{
 }
 .tips-all{
  
-  margin: 250px 25vw 0 25vw;
+  margin: 250px 30vw 0 30vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
