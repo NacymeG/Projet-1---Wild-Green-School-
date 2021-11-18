@@ -8,4 +8,4 @@ Project to make the Wild code school green again !
 
 1 - Fork the project
 
-2 - Download it, drak and drop `index.html` in your navigateur
+2 - Download it, drag and drop `index.html` in your navigateur
